@@ -1,0 +1,215 @@
+:root {
+  --bs-success: #d3e3ab;
+}
+.btn-success {
+  background-color: #d3e3ab;
+  border: none;
+}
+.text-success {
+  color: #d3e3ab;
+}
+.border-succes {
+  border-color: var(--bs-success);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+ul {
+  list-style-type: none;
+}
+.slider img {
+  height: 75vh;
+}
+section {
+  min-height: 50vh;
+}
+.bg {
+  background-image: url(./img/f601d43a-d652-4ba2-9d0f-cf0eee3d6e50.png);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+section a {
+  width: 140px;
+  height: 120px;
+  margin: 10px;
+}
+section a img {
+  width: 90px;
+  height: 90px;
+}
+section a:hover {
+  box-shadow: 0 0 10px rgb(221, 216, 216);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.card {
+  min-width: 30%;
+  height: 420px;
+  cursor: pointer;
+}
+.card p {
+  font-size: 15px;
+  margin: 12px 0;
+}
+.card-body {
+  margin-bottom: 20px;
+}
+.card:hover .card-body {
+  background-color: var(--bs-success);
+  color: white;
+}
+.notebg {
+  background-image: url(./img/background.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-x: center;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (min-width: 768px){
+nav > ul > li:not(:last-child,:nth-child(6),:first-child)::before {
+  content: url(./img/chevron-down.svg);
+  width: 20px;
+  height: 20px;
+}
+}
+@media screen and (max-width: 768px) {
+  .notebg {
+    background-image: url(./img/green-bg.jpg);
+  }
+  nav > ul {
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 5;
+    overflow: hidden;
+    display: none;
+    box-shadow: 1px 1px 2px rgb(197, 194, 194);
+  }
+  nav > ul > li {
+    margin: 20px 0;
+    min-height: 30px;
+    width: 100%;
+  }
+  .dropdown-menu {
+    width: 100%;
+    border: none;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+  }
+  nav > ul > li:hover .dropdown-menu {
+    min-height: 50px;
+    position: relative;
+  }
+  nav > ul > li:not(:last-child, :first-child, :nth-child(4))::before {
+    content: ">";
+      position: absolute;
+    left: 10px;
+  }
+  nav > ul > li:hover  nav > ul > li:not(:last-child, :first-child, :nth-child(4))::before {
+    width: 30px;
+    height: 30px;
+    transform: rotate(70deg);
+    -webkit-transform: rotate(70deg);
+    -moz-transform: rotate(70deg);
+    -ms-transform: rotate(70deg);
+    -o-transform: rotate(70deg);
+}
+.menu{
+  position: absolute;
+  right: 20px;
+  top:25px;
+}
+.menu:focus + ul{
+  display: block;
+}
+.close{
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+.close:focus + ul{
+  display: none;
+}
+.font-size h5{
+  font-size: 13px;
+}
+.font-size p{
+  font-size: 11px;
+}
+input::placeholder , textarea::placeholder{
+  font-size: 11px;
+}
+}
+
+label:after {
+  content: "*";
+  color: red;
+}
+input,
+select {
+  height: 30px;
+}
+.owl-item {
+  box-shadow: 0 0 10px rgb(226, 224, 224);
+}
+.owl-carousel {
+  padding: 5px;
+}
+footer {
+  background-image: url(./img/393b1e6f-bd47-4e2f-b36b-e3df22701226.jpg);
+  min-height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer h4 {
+  color: blue;
+}
+footer h4::before {
+  content: "";
+  width: 65%;
+  height: 2px;
+  background-color: rgb(132, 132, 223);
+  display: inline-block;
+  margin: 0 5px;
+}
+footer div:last-child h4::before {
+  width: 30%;
+}
+footer p {
+  font-size: 14px;
+}
+footer img {
+  object-fit: contain;
+}
+nav li:hover .dropdown-menu {
+  display: block;
+}
+.bg-image {
+  background-image: url(./img/87ef274e-5f54-486a-a0d7-5401905b051c.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
